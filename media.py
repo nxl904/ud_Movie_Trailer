@@ -2,7 +2,7 @@ import webbrowser
 #Import webbrowser module from standard python library
 
 class Video(): 
-	"""Define and initate the controller for class Video. Title, and duration defined in this class."""
+	 """Define and initate the controller for class Video. Title, and duration defined in this class."""
 	def __init__ (self, title, duration): 
 		self.title = title
 		self.duration = duration
