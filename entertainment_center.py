@@ -1,6 +1,9 @@
 import media
+#Imports the media.py class module into entertainment_center.py
 import fresh_tomatoes
+#Imports the fresh_tomatoes.py module into entertainment_center.py to apply html/css elements to generate a webpage. 
 
+#Each movie to be rendred on the webpage with their assocaited attribute values. Each one calls the Movie class from the media.py module to assign attributes.
 gangs_of_new_york = media.Movie("Gangs of New York", "130", "Amsterdam Vallon (Leonardo DiCaprio) is a young Irish immigrant released from prison. He returns to the Five Points seeking revenge against his father's killer...", "https://upload.wikimedia.org/wikipedia/en/a/ae/Gangs_of_New_York_Poster.jpg", "https://www.youtube.com/watch?v=1_CDJiYux1A")
 
 toy_story = media.Movie("Toy Story", "90", "A story of a boy and his toys that come to life", "https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg", "https://www.youtube.com/watch?v=KYz2wyBy3kc" )
@@ -18,3 +21,5 @@ movies = [gangs_of_new_york, shawshank_redemption, toy_story, Revolver, last_kin
 
 
 fresh_tomatoes.open_movies_page(movies)
+#Calls the open_movies_page method from fresh_tomatoes on the movies list in entertainment_center
+

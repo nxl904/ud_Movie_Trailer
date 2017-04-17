@@ -1,13 +1,17 @@
 import webbrowser
+"""Import webbrowser module from standard python library"""
 
 class Video(): 
+"""Define and initate the controller for class Video. Title, and duration defined in this class."""
 	def __init__ (self, title, duration): 
 		self.title = title
 		self.duration = duration
 
 
+
 class Movie(Video): 
-	""" This is a classs provides a way to store movie related  information""" 
+"""Child class of Video. The only purpose that two classes exist in this code is to demonstarte inheritance. In this case the Movie class is 
+inheriting title and duration from Video. The show_trailer method calls "open" from the webbrowser module prompting the youtube url to opne""" 
 	
 	def __init__ (self, title, duration, movie_storyline, poster_image, trailer_youtube): 
 		Video.__init__(self, title, duration)
